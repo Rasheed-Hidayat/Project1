@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <%- include("./same/same.ejs") %>
+  </head>
+  <body>
+    <div class="links flex items-center justify-center mt-4 mb-9">
+      <div class="flex gap-3">
+        <div class="login">
+          <div><a href="./login" class="bg-gray-400 p-2">Login</a></div>
+        </div>
+        <div class="authenticate">
+          <div>
+            <a href="http://localhost:3000/authenticate" class="bg-gray-400 p-2"
+              >Authenticate</a
+            >
+          </div>
+        </div>
+        <div class="logout">
+          <div>
+            <a href="http://localhost:3000/logout" class="bg-gray-400 p-2"
+              >Logout</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-section flex justify-center mt-4">
+      <div class="w-[300px]">
+        <div class="heading mb-3"><h1 class="text-lg font-bold">Form</h1></div>
+        <form action="/adduser" method="post">
+          <div class="flex flex-col gap-3">
+            <div class="username flex-1">
+              <input
+                type="text"
+                placeholder="username"
+                name="username"
+                class="w-full bg-gray-100 p-1 border-[1px] border-gray-300 outline-none"
+              />
+            </div>
+            <div class="email flex-1">
+              <input
+                type="text"
+                name="email"
+                class="w-full bg-gray-100 p-1 border-[1px] border-gray-300 outline-none"
+                placeholder="email"
+                id=""
+              />
+            </div>
+            <div class="password flex-1">
+              <input
+                type="password"
+                name="password"
+                placeholder="password"
+                class="w-full bg-gray-100 p-1 border-[1px] border-gray-300 outline-none"
+                id=""
+              />
+            </div>
+            <div class="conf-password flex-1">
+              <input
+                type="password"
+                name="confirmPassword"
+                placeholder="confirm password"
+                class="w-full bg-gray-100 p-1 border-[1px] border-gray-300 outline-none"
+              />
+            </div>
+            <div class="signup-btn">
+              <div><input type="submit" class="bg-gray-300 p-1" /></div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

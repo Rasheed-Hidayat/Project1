@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <%- include("./same/same") %>
+  </head>
+  <body>
+    <div class="login-form flex justify-center mt-6">
+      <div class="form w-[270px]">
+        <div class="heading text-center"><h1>Login Form</h1></div>
+        <form action="/loginuser" method="post">
+          <div class="flex flex-col gap-3">
+            <div class="email">
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  class="w-full bg-gray-300 border-[1px] border-gray-600 p-1 outline-none"
+                />
+              </div>
+            </div>
+            <div class="password">
+              <div>
+                <input
+                  type="password"
+                  placeholder="password"
+                  name="password"
+                  class="w-full bg-gray-300 border-[1px] border-gray-600 p-1 outline-none"
+                />
+              </div>
+            </div>
+            <div class="login-btn">
+              <div>
+                <input type="submit" class="bg-gray-300 p-2 cursor-pointer" />
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
